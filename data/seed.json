@@ -1,0 +1,59 @@
+{
+  "hosts": [
+    {
+      "slug": "casey-example",
+      "name": "Casey Example",
+      "email": "casey@example.com",
+      "bufferMinutes": 10,
+      "availability": [
+        { "day": 1, "start": "09:00", "end": "17:00" },
+        { "day": 2, "start": "09:00", "end": "17:00" },
+        { "day": 3, "start": "09:00", "end": "17:00" },
+        { "day": 4, "start": "09:00", "end": "17:00" },
+        { "day": 5, "start": "09:00", "end": "13:00" }
+      ]
+    },
+    {
+      "slug": "jules-example",
+      "name": "Jules Sample",
+      "email": "jules@example.com",
+      "bufferMinutes": 0,
+      "availability": [
+        { "day": 2, "start": "10:00", "end": "15:00" },
+        { "day": 4, "start": "10:00", "end": "15:00" }
+      ]
+    }
+  ],
+  "meetingTypes": [
+    { "id": "t1", "hostSlug": "casey-example", "name": "15 minute intro", "minutes": 15, "questions": ["What would you like to talk about?"] },
+    { "id": "t2", "hostSlug": "casey-example", "name": "30 minute chat", "minutes": 30, "questions": ["What do you want help with?", "Link to your website (optional)"] },
+    { "id": "t3", "hostSlug": "casey-example", "name": "60 minute deep dive", "minutes": 60, "questions": ["What is the goal of this session?", "Anything we should read first?"] },
+    { "id": "t4", "hostSlug": "jules-example", "name": "30 minute call", "minutes": 30, "questions": ["What is the call about?"] }
+  ],
+  "bookings": [
+    { "id": "b1", "hostSlug": "casey-example", "typeId": "t2", "start": "2026-11-02T10:00", "minutes": 30, "guestName": "Pat Placeholder", "guestEmail": "pat@example.com", "createdAt": "2026-10-28T12:00:00.000Z",
+      "answers": [ { "question": "What do you want help with?", "answer": "Setting up a simple weekly schedule." }, { "question": "Link to your website (optional)", "answer": "https://example.com/pat" } ] },
+    { "id": "b2", "hostSlug": "casey-example", "typeId": "t1", "start": "2026-11-02T14:00", "minutes": 15, "guestName": "Robin Sample", "guestEmail": "robin@example.com", "createdAt": "2026-10-28T13:00:00.000Z",
+      "answers": [ { "question": "What would you like to talk about?", "answer": "A quick hello and a few questions." } ] },
+    { "id": "b4", "hostSlug": "casey-example", "typeId": "t3", "start": "2026-11-02T15:30", "minutes": 60, "guestName": "Sky Testperson", "guestEmail": "sky@example.com", "createdAt": "2026-10-28T15:00:00.000Z",
+      "answers": [ { "question": "What is the goal of this session?", "answer": "Plan a small class for ten people." }, { "question": "Anything we should read first?", "answer": "Not yet." } ] },
+    { "id": "b5", "hostSlug": "casey-example", "typeId": "t1", "start": "2026-11-04T09:00", "minutes": 15, "guestName": "Alex Demo", "guestEmail": "alex@example.com", "createdAt": "2026-10-28T16:00:00.000Z",
+      "answers": [ { "question": "What would you like to talk about?", "answer": "How the booking page works." } ] },
+    { "id": "b6", "hostSlug": "casey-example", "typeId": "t2", "start": "2026-11-05T11:00", "minutes": 30, "guestName": "Morgan Pretend", "guestEmail": "morgan@example.com", "createdAt": "2026-10-28T17:00:00.000Z",
+      "answers": [ { "question": "What do you want help with?", "answer": "Picking meeting lengths." }, { "question": "Link to your website (optional)", "answer": "" } ] },
+    { "id": "b7", "hostSlug": "casey-example", "typeId": "t2", "start": "2026-11-12T13:30", "minutes": 30, "guestName": "Kim Mockup", "guestEmail": "kim@example.com", "createdAt": "2026-10-29T09:00:00.000Z",
+      "answers": [ { "question": "What do you want help with?", "answer": "A review of my intro page." }, { "question": "Link to your website (optional)", "answer": "https://example.com/kim" } ] },
+    { "id": "b8", "hostSlug": "casey-example", "typeId": "t3", "start": "2026-11-17T10:00", "minutes": 60, "guestName": "Drew Samplefolk", "guestEmail": "drew@example.com", "createdAt": "2026-10-29T09:30:00.000Z",
+      "answers": [ { "question": "What is the goal of this session?", "answer": "Get my first three customers." }, { "question": "Anything we should read first?", "answer": "My one page plan." } ] },
+    { "id": "b9", "hostSlug": "casey-example", "typeId": "t1", "start": "2026-12-01T09:30", "minutes": 15, "guestName": "Jo Notreal", "guestEmail": "jo@example.com", "createdAt": "2026-10-29T10:00:00.000Z",
+      "answers": [ { "question": "What would you like to talk about?", "answer": "Hiring a helper." } ] },
+    { "id": "b10", "hostSlug": "casey-example", "typeId": "t2", "start": "2026-12-08T15:00", "minutes": 30, "guestName": "Sasha Example", "guestEmail": "sasha@example.com", "createdAt": "2026-10-29T10:30:00.000Z",
+      "answers": [ { "question": "What do you want help with?", "answer": "Moving my calls into one place." }, { "question": "Link to your website (optional)", "answer": "" } ] },
+    { "id": "b11", "hostSlug": "casey-example", "typeId": "t1", "start": "2026-12-15T11:15", "minutes": 15, "guestName": "River Fakeman", "guestEmail": "river@example.com", "createdAt": "2026-10-29T11:00:00.000Z",
+      "answers": [ { "question": "What would you like to talk about?", "answer": "End of year planning." } ] },
+    { "id": "b3", "hostSlug": "jules-example", "typeId": "t4", "start": "2026-11-03T11:00", "minutes": 30, "guestName": "Lee Fakename", "guestEmail": "lee@example.com", "createdAt": "2026-10-28T14:00:00.000Z",
+      "answers": [ { "question": "What is the call about?", "answer": "A friendly catch up." } ] },
+    { "id": "b12", "hostSlug": "jules-example", "typeId": "t4", "start": "2026-11-05T13:30", "minutes": 30, "guestName": "Ari Madeup", "guestEmail": "ari@example.com", "createdAt": "2026-10-29T08:00:00.000Z",
+      "answers": [ { "question": "What is the call about?", "answer": "Questions about the schedule." } ] }
+  ]
+}
